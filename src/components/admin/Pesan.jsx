@@ -215,7 +215,7 @@ export default function Pesan() {
 
   return (
     <div className="min-h-screen">
-      <main className="container mx-auto px-4 py-8 mt-16 space-y-10">
+      <main className="container mx-auto px-4 py-8">
         <section>
           <h2 className="text-lg md:text-xl font-semibold mb-4">
             List Pengajuan Reservasi
