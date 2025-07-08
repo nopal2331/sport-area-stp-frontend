@@ -256,7 +256,7 @@ export default function UserList() {
 
   // Main render
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="min-h-screen flex flex-col ">
       <main className="flex-grow p-4 sm:p-6">
         <h1 className="text-xl sm:text-2xl font-semibold mb-6">Daftar User</h1>
 
