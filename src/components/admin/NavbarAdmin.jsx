@@ -28,6 +28,7 @@ const NavbarAdmin = ({
   menu = [
     { title: "Home", url: "/admin" },
     { title: "Pesan Masuk", url: "/admin/pesan" },
+    { title: "List User", url: "/admin/userlist" },
     { title: "Laporan", url: "/admin/laporan" },
   ],
 

@@ -19,7 +19,9 @@ import HomeAdmin from "./components/admin/HomeAdmin";
 import Pesan from "./components/admin/Pesan";
 import Basket from "./components/users/Basket";
 import Futsal from "./components/users/Futsal";
-import Laporan from "./components/users/LaporanUser";
+import LaporanUser from "./components/users/LaporanUser";
+import LaporanAdmin from "./components/admin/LaporanAdmin";
+import UserList from "./components/admin/UserList";
 
 function App() {
   return (
@@ -35,14 +37,15 @@ function App() {
         <Route path="/admin/*" element={<AdminDashboard />}>
           <Route index element={<HomeAdmin />} />
           <Route path="pesan" element={<Pesan />} />
-          <Route path="laporan" element={<div>Laporan</div>} />
+          <Route path="laporan" element={<LaporanAdmin />} />
+          <Route path="userlist" element={<UserList />} />
         </Route>
         <Route path="/users" element={<UsersPage />}>
           <Route index element={<UsersHome />} />
           <Route path="panduan" element={<Panduan />} />
           <Route path="sewa-lapangan-basket" element={<Basket />} />
           <Route path="sewa-lapangan-Futsal" element={<Futsal />} />
-          <Route path="laporan" element={<Laporan />} />
+          <Route path="laporan" element={<LaporanUser />} />
         </Route>
 
         {/* Halaman 404 */}

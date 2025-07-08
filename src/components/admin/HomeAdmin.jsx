@@ -167,7 +167,7 @@ export default function HomeAdmin() {
     );
   };
   return (
-    <div className="pt-28 pb-10 space-y-10">
+    <div className="pt-10 pb-10 space-y-10">
       <div className="text-center">
         <h1 className="text-3xl font-bold mb-2">Jadwal Pemakaian Lapangan</h1>
         <p className="text-muted-foreground max-w-3xl mx-auto">

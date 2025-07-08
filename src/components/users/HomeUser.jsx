@@ -49,7 +49,7 @@ export default function HomeUser() {
         .filter((b) => b.status === "approved")
         .filter((b) => {
           const bookingDate = new Date(b.date);
-          const [hourStr, minuteStr] = b.time_slot.split(":"); // Misal "17:00"
+          const [hourStr, minuteStr] = b.time_slot.split(":");
           bookingDate.setHours(parseInt(hourStr), parseInt(minuteStr), 0, 0);
           return bookingDate >= now;
         })
@@ -59,6 +59,7 @@ export default function HomeUser() {
             weekday: "long",
             day: "numeric",
             month: "long",
+            year: "numeric",
           }),
           waktu: b.time_slot,
         }));
